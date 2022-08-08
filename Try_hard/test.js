@@ -104,12 +104,10 @@
 // //
 // //bai1
 // {
-//   let num1;
-//   let num2;
-//   let num3;
-//   num1 = prompt("Điền điểm Vật lý:",'');
-//   num2 = prompt("Điền điểm Hóa Học:",'');
-//   num3 = prompt("Điền điểm Sinh học:",'');
+//
+//  let num1 = parseInt(prompt("Điền điểm Vật lý:"));
+//  let num2 = parseInt(prompt("Điền điểm Hóa Học:"));
+//  let num3 = parseInt(prompt("Điền điểm Sinh học:"));
 //
 //   let DiemTb =((num1 + num2 + num3) / 3) ;
 //   let tong = (num1+ num2 + num3);
@@ -135,23 +133,31 @@
 // Bai5
 
 
-var num1 = parent(document.getElementById("num1").value);
-var num2 = parent(document.getElementById("num2").value);
+// var num1 = document.getElementById("num1").value;
+// var num2 = document.getElementById("num2").value;
 
-function cong(num1,num2){
+function cong(){
+    var num1 = parseInt(document.getElementById("num1").value);
+    var num2 = parseInt(document.getElementById("num2").value);
     let tong = num1 + num2;
     alert("tổng là :" + tong);
 }
-function tru(num1,num2){
-    let hieu = num1 + num2;
+function tru(){
+    var num1 = parseInt(document.getElementById("num1").value);
+    var num2 = parseInt(document.getElementById("num2").value);
+    let hieu = num1 - num2;
     alert("Hiệu là :" + hieu);
 }
-function nhan(num1,num2){
-    let tich = num1 + num2;
+function nhan(){
+    var num1 = parseInt(document.getElementById("num1").value);
+    var num2 = parseInt(document.getElementById("num2").value);
+    let tich = num1 * num2;
     alert("Tich là :" + tich);
 }
-function chia(num1,num2){
-    let thuong = num1 + num2;
+function chia(){
+    var num1 = parseInt(document.getElementById("num1").value);
+    var num2 = parseInt(document.getElementById("num2").value);
+    let thuong = num1 / num2;
     alert("Thương là :" + thuong);
 }
 

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>
+    Game Doan so
+</h1>
+<button onclick="Game()">Choi</button>
+</body>
+<script >
+function Game() {
+    let number = 81;
+
+        // do {
+            for(let i = 0;i<=7;i++){
+            let n = parseInt(prompt('Vui long nhap so can doan:'));
+            if (number === n) {
+                alert('So do la :' + number);
+                document.write("Chuc mung ban" + "<br\>");
+            } else {
+                alert("ban con " + (6-i) + "lan doan");
+                if (n > number) {
+                    alert('So do la so nho hon');
+
+                } else {
+                    alert('So do la so lon hon');
+                }
+
+            }
+            if(i>6){
+                document.write("Gameover" + "<br\>");
+            }
+            }
+        // } while (i>6){
+        //     alert('Game over');
+        }
+
+
+
+
+
+
+}
+</script>
+</html>

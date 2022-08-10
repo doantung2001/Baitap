@@ -13,36 +13,34 @@
 <script >
 function Game() {
     let number = 81;
+    for (let i = 0; i <= 7; i++) {
+        let n = parseInt(prompt('Vui long nhap so can doan:'));
+        if (number === n) {
+            alert('So do la :' + number);
+            document.write("Chuc mung ban" + "<br\>");
+        } else {
+            alert("ban con " + (6 - i) + "lan doan");
+            if (n > number) {
+                alert('So do la so nho hon');
 
-        // do {
-            for(let i = 0;i<=7;i++){
-            let n = parseInt(prompt('Vui long nhap so can doan:'));
-            if (number === n) {
-                alert('So do la :' + number);
-                document.write("Chuc mung ban" + "<br\>");
             } else {
-                alert("ban con " + (6-i) + "lan doan");
-                if (n > number) {
-                    alert('So do la so nho hon');
+                alert('So do la so lon hon');
+            }
 
-                } else {
-                    alert('So do la so lon hon');
-                }
-
-            }
-            if(i>6){
-                document.write("Gameover" + "<br\>");
-            }
-            }
-        // } while (i>6){
-        //     alert('Game over');
         }
-
-
-
-
-
-
+        if (i > 7) {
+            document.write("Gameover");
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
 </script>
 </html>

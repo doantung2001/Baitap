@@ -8,6 +8,7 @@
 <button onclick="xuoi()">Xuoi</button>
 <button onclick="xuoi1()">Xuoi1</button>
 <button onclick="nguoc()">Nguoc</button>
+<button onclick="nguoc1()">Nguoc1</button>
 </body>
 <script>
     function xuoi(){
@@ -36,20 +37,41 @@
             i++;
         }
     }
-    function xuoi1(){
+
+    function xuoi1() {
         const n = parseInt(prompt('Tang thap: '));
 
-        let i =0;
-        for(let i = 1;i>0;i++){
-            for (let j = n-1; j > i; j--) {
-                document.write(" ")
+
+        for (let i = 0; i < n; i++) {
+            for (let j = 1; j <= n; j++) {
+                if (j > i) {
+                    document.write("*");
+                } else {
+                    document.write("-");
+
+                }
 
             }
-            document.write("*");
-
-
+            document.write('<br/>');
         }
     }
+    function nguoc1() {
+        const n = parseInt(prompt('Tang thap: '));
 
+
+        for (let i = 0; i < n; i++) {
+            for (let j = 0; j <= n; j++) {
+                if (j > i) {
+                    document.write("-");
+                } else {
+                    document.write("*");
+
+                }
+
+            }
+
+            document.write('<br/>');
+    }
+    }
 </script>
 </html>

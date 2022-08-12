@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script >
+    let number =[
+        [1,1,1,1,1],
+        [2,2,2,2,2],
+        [3,3,3,3,3],
+    ]
+    let principal = 0, secondary = 0;
+    for (let i = 0; i < 5; i++) {
+        for (let j = 0; j <5; j++) {
+            if (i == j)
+                principal += number[i][j];
+            if ((i + j) == (5 - 1))
+                secondary += number[i][j];
+        }}
+        document.write("Principal Diagonal:" + principal + "<br>");
+        document.write("Secondary Diagonal:" + secondary + "<br>");
+
+
+
+
+</script>
+</html>
